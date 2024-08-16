@@ -5,4 +5,4 @@ FROM php:8.1-apache-buster
 EXPOSE 80
 
 # Copie o conteúdo da pasta src para o diretório padrão do Apache no contêiner
-#COPY src/ /var/www/html/
+#COPY src/ /var/www/html/ 
