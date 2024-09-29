@@ -1,67 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Coppam</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Estilos -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fontes -->
 </head>
 <body>
-
-    <!-- Cabeçalho -->
+    
     <header>
-        <figure>
-            <img src="img/Logo Coppam.svg" alt="Logo da Empresa">
-        </figure>
-        <nav>
+        <div class="header-principal">
+            <div class="header-wrapper">
+                <img src="img/Logo Coppam.svg" alt="Logo Coppam">
+            </div>
+            <div class="header-search">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="serchbar-input">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation">
             <ul>
-                <li><a href="#">Acessar</a></li>
-                <li><a href="#">Cadastrar-se</a></li>
-                <li><a href="#">Contatar Empresa</a></li>
+                <li class="header-nav-item">Pratimônio Material</li>
+                <li class="header-nav-item">Patrimônio Imaterial</li>
+                <li class="header-nav-item">Acesso Administrativo</li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção Principal -->
     <main>
-        <section class="about">
-            
-            <h1>Missão e Objetivos</h1>
-
-            <p>
-                O Conselho de Preservação do Patrimônio Histórico e Cultural de Campos dos Goytacazes (COPPAM) é um órgão municipal de fundamental importância para a preservação da identidade e da memória da cidade.
-            </P>
-                
-            <P>
-                Criado pela Lei Municipal nº 7.527/2003, o COPPAM tem como principal objetivo proteger e valorizar os bens culturais de Campos dos Goytacazes, sejam eles imóveis, como prédios históricos e monumentos, ou móveis, como obras de arte e acervos documentais.
-            </p>
-           
-        </section>
-
-        <!-- Formulário de Cadastro -->
-        <section class="register">
-            <h2>Cadastro de Usuário</h2>
-            <form action="php/cadastro.php" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-
-                <button type="submit">Cadastrar</button>
-            </form>
-        </section>
+        <div class="sobre">
+            <div class="sobre-title">
+                <h2>Sobre</h2>
+            </div>
+            <div class="sobre-text">
+                <p>O Conselho de Preservação do Patrimônio Histórico e Cultural de Campos dos Goytacazes (COPPAM) é um órgão municipal de fundamental importância para a preservação da identidade e da memória da cidade.</p>
+                <p>Criado pela Lei Municipal nº 7.527/2003, o COPPAM tem como principal objetivo proteger e valorizar os bens culturais de Campos dos Goytacazes, sejam eles imóveis, como prédios históricos e monumentos, ou móveis, como obras de arte e acervos documentais.</p>
+            </div>
+        </div>
+        <div class="fonte">
+            <span>Fonte:IBGE</span>
+        </div>
     </main>
 
-    <!-- Rodapé -->
     <footer>
-        <p>Desenvolvido por <a href="https://github.com/Kevin-Perdomo/PHP_DOCKER" target="_blank">Kevin Siqueira Perdomo</a> &copy; <time datetime="2024">2024</time></p>
-        <p>Razão Social: Prefeitura Municipal De Campos Dos Goytacazes | CNPJ: 29.116.894/0001-61</p>
-        <p>Endereço: Teatro Municipal Trianon - R. Mal. Floriano, 211 - Centro, Campos dos Goytacazes - RJ, 28010-161</p>
+        <div class="links">
+            <p> <a style="margin-right: 15px;" href="#">Sobre</a> | <a style="margin-left: 10px;" href="#">Quem somos</a> </p>
+        </div>
+        <div class="infos">
+            <p>Rua Marechal floriano, 211 | Centro | Campos dos Goytacazes / RJ</p>
+        </div>
+        <div class="logo-gov">
+            <img src="img/Logo Prefeitura.svg" alt="Logo do governo do rio de janeiro">
+        </div>
     </footer>
 
+
+
+
+    <script src='main.js'></script>
 </body>
 </html>
