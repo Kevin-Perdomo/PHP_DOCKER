@@ -1,0 +1,10 @@
+[comandos docker no terminal]
+
+docker build -t nome-da-imagem .
+docker run -d -p 8080:80 nome-da-imagem
+
+docker compose up 
+docker compose stop
+
+docker start <nome-ou-id-do-container>
+docker stop <nome-ou-id-do-container>
