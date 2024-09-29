@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Example</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <figure>
+            <img src="img/logo.png" alt="Logo da Empresa">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#">Acessar</a></li>
+                <li><a href="#">Cadastrar-se</a></li>
+                <li><a href="#">Contatar Empresa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <section class="about">
+            <h1>Missão e Objetivos</h1>
+            <p>Nossa missão é fornecer soluções de software de alta qualidade para automatizar e otimizar processos empresariais.</p>
+            <p>Objetivos:</p>
+            <ul>
+                <li>Inovação tecnológica</li>
+                <li>Atendimento às necessidades dos clientes</li>
+                <li>Melhoria contínua dos nossos produtos</li>
+            </ul>
+            <p>Área de atuação: Desenvolvimento de sistemas de automação para empresas de médio e grande porte.</p>
+        </section>
+
+        <!-- Formulário de Cadastro -->
+        <section class="register">
+            <h2>Cadastro de Usuário</h2>
+            <form action="php/cadastro.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Razão Social: Empresa XYZ Ltda. | CNPJ: 12.345.678/0001-99</p>
+        <p>Endereço: Rua Exemplo, 123 - Centro, Cidade - Estado</p>
+        <p>Desenvolvido por <a href="https://github.com/seudesenvolvedor" target="_blank">Seu Nome</a> &copy; <time datetime="2024">2024</time></p>
+    </footer>
+
+</body>
+</html>
