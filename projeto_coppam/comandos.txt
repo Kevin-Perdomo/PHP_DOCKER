@@ -1,0 +1,17 @@
+//Da permissão para o SO rodar o script
+chmod 644 ./sql/init.sql
+
+//Sobe os containers
+docker compose up -d
+
+//Tomba os containers
+docker compose stop
+
+//Acessando o DB
+docker exec -it db_container mysql -u root -p //password on docker-compose: root_password
+SHOW DATABASES;
+USE meu_banco;
+SHOW TABLES;
+DESCRIBE usuarios;
+SELECT * FROM usuarios;
+
