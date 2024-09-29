@@ -1,4 +1,4 @@
-[comandos docker no terminal]
+==================================comandos docker noterminal==================================
 
 docker build -t nome-da-imagem .
 docker run -d -p 8080:80 nome-da-imagem
