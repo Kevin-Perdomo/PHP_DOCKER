@@ -38,24 +38,34 @@
         </nav>
     </header>
 
-    <main>
+    <main style="background-image: none;">
         <div class="sobre">
             <div class="sobre-title">
-                <h2>Sobre</h2>
-            </div>
-            <div class="sobre-text">
-                <p>O Conselho de Preservação do Patrimônio Histórico e Cultural de Campos dos Goytacazes (COPPAM) é um órgão municipal de fundamental importância para a preservação da identidade e da memória da cidade.</p>
-                <p>Criado pela Lei Municipal nº 7.527/2003, o COPPAM tem como principal objetivo proteger e valorizar os bens culturais de Campos dos Goytacazes, sejam eles imóveis, como prédios históricos e monumentos, ou móveis, como obras de arte e acervos documentais.</p>
+                <h2 style="font-size: 52px;">Cadastro <br> Administrativo</h2>
             </div>
         </div>
-        <div class="fonte">
-            <span>Fonte:IBGE</span>
+        <div class="form">
+            <form action="php/cadastro.php" method="POST">
+                <div class="input-group">
+                    <label for="user">Usuário:</label>
+                    <input type="text" id="user" name="nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="senha" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
         </div>
     </main>
 
     <footer>
         <div class="links">
-            <p> <a style="margin-right: 15px;" href="#">Sobre</a> | <a style="margin-left: 10px;" href="#">Quem somos</a> </p>
+            <p> <a style="margin-right: 15px;" href="html/Sobre.html">Sobre</a> | <a style="margin-left: 10px;" href="html/QuemSomos.html">Quem somos</a> </p>
         </div>
         <div class="infos">
             <p>Rua Marechal floriano, 211 | Centro | Campos dos Goytacazes / RJ</p>
@@ -68,6 +78,6 @@
 
 
 
-    <script src='main.js'></script>
+    <!-- <script src='main.js'></script> -->
 </body>
 </html>
