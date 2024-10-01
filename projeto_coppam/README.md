@@ -31,6 +31,7 @@ Este projeto foi desenvolvido para ser executado em sistemas Linux. Se você nã
 
 # Comandos Necessários
 
+`Em caso de erro para rodar o MySQL`<br>
 Para permitir que o sistema operacional execute o script de inicialização do banco de dados, utilize o seguinte comando:
 
 ```bash
